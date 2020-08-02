@@ -17,18 +17,18 @@ restService.use(
 
 restService.use(bodyParser.json());
 
-const projectId = 'Your-Proyect-Key';
+const projectId = 'chatdelivery-jumyxy';
 
 //https://dialogflow.com/docs/agents#settings
 // generate session id (currently hard coded)
 const sessionId = '2eccb33b-8494-40dd-ac92-212972b9dbea';
-const languageCode = 'en-US';
+const languageCode = 'pt-BR';
 
 
-let privateKey = 'Your-Private Key';
+let privateKey = 'e1d250d41470d7c2b569b0fa590c653d5b728a7f';
 
 // as per goolgle json
-let clientEmail = "Your-Client-Email";
+let clientEmail = "chatdelivery-jumyxy@appspot.gserviceaccount.com";
 let config = {
     credentials: {
         private_key: privateKey,
@@ -66,7 +66,7 @@ restService.post("/message", async function (req, res) {
             return res.json({ messageResponse: result.fulfillmentText });
         })
         .catch(err => {
-            return res.json({ messageResponse: "Intente nuevamente" });
+            return res.json({ messageResponse: "Intente novamente" });
         });
 
 });
