@@ -25,10 +25,10 @@ const sessionId = '2eccb33b-8494-40dd-ac92-212972b9dbea';
 const languageCode = 'pt-BR';
 
 
-let privateKey = 'e1d250d41470d7c2b569b0fa590c653d5b728a7f';
+let privateKey = 'f4752c65e1c67de1b643e8d47a6d631039682ef4';
 
 // as per goolgle json
-let clientEmail = "chatdelivery-jumyxy@appspot.gserviceaccount.com";
+let clientEmail = "dialogflow-hjkuax@chatdelivery-jumyxy.iam.gserviceaccount.com";
 let config = {
     credentials: {
         private_key: privateKey,
@@ -71,6 +71,6 @@ restService.post("/message", async function (req, res) {
 
 });
 
-restService.listen(process.env.PORT || 8000, function () {
+restService.listen(process.env.PORT ||  8000, function () {
     console.log("Server up and listening");
 });
